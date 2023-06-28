@@ -82,7 +82,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows == 0) {
     // L'utente "guest" non esiste, quindi procedi con l'inserimento
-    $sql = "INSERT INTO utente (id, email, username, password) VALUES (1, NULL, 'guest', 'guest')";
+    $sql = "INSERT INTO utente (id, email, username, password) VALUES (1, NULL, 'GUEST', 'GUEST')";
     if ($conn->query($sql) === TRUE) {
         echo "L'utente 'guest' è stato inserito correttamente.";
     } else {
