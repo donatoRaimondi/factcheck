@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
+html {
+  height: 100%;
+}
+
+body{
+  background-image: url("../Sfondi/beautiful-milky-way-night-sky.jpg");
+  background-size: cover;
+  background-position: bottom;
+}

@@ -1,0 +1,33 @@
+.sear {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 80%;
+  z-index: 9999;
+  background-color: black;
+  overflow: hidden;
+}
+
+.sear-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 1px; /* Aggiungi un padding per evitare che il contenuto aderisca ai bordi */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Stile della scrollbar (solo per i browser che supportano la proprietà) */
+.sear-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sear-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sear-content::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
