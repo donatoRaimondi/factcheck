@@ -1,9 +1,0 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&display=swap");
-html {
-  height: 100%;
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 400;
-}
-#large-header {
-  background-image: url("../Sfondi/galaxy-night-landscape.jpg");
-}
