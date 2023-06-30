@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
 
 
     // Return a response
-    echo 'Media uploaded successfully!';
+    header('Location: image_anl.php');
   }else {
         echo 'Invalid file type. Only PNG, JPEG, JPG, MP4 and MP3 files are allowed.';
   }

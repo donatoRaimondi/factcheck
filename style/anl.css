@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   display: block;
   position: relative;
   z-index: 0;
@@ -46,6 +46,7 @@ body main a {
   position: relative;
   z-index: 2;
   background-color: transparent;
+  margin-bottom: 80px;
 }
 .upload h1, .upload p {
   margin: 0;
@@ -248,13 +249,14 @@ body main a {
 	display: flex;
 	justify-content: center;
   align-items: center;
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 	position: relative !important;
+  margin-bottom: 20px;
   }
 
 .button {
 	position: relative;
-	
+
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: center;
@@ -265,7 +267,7 @@ body main a {
 	font-family: verdana;
 	letter-spacing: 4px;
 	border-color: transparent;
-	
+
 
 	/* use combination of any two */
 	/* 1. */
@@ -326,7 +328,7 @@ body main a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 20px;
   color: #fff;
   padding-bottom: 30px;
 }

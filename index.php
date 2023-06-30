@@ -35,6 +35,7 @@ if (isset($_SESSION["id"])) {
   <div class="navigation">
     <!-- LOGO -->
     <a class="navigation-logo" href="#">
+      
       <img src="Logo/Fact_check_logo2.svg" style="height: 100px;">
     </a>
 
@@ -42,67 +43,16 @@ if (isset($_SESSION["id"])) {
     <nav role="navigation">
       <ul>
         <li>
-          <a class="navigation-link" href="../Splashscreen/index.html">
-            <i class="fa-regular fa-house-chimney"></i>
+          <a class="navigation-link" href="sistema/loginospite.php">
+            <i class="fa-solid fa-person-circle-question"></i>
             <span class="navigation-link__name js_navigation-item-name">
-              Home
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="navigation-link" href="../Analytics/index.html">
-            <i class="fa-solid fa-chart-pie"></i>
-            <span class="navigation-link__name js_navigation-item-name">
-              Analytics
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="navigation-link" href="../Searchimage/index.html">
-            <i class="fas fa-images"></i>
-            <span class="navigation-link__name js_navigation-item-name">
-              Image analyzer
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="navigation-link" href="../Searchpage/index.html">
-            <i class="fa-regular fa-newspaper"></i>
-            <span class="navigation-link__name js_navigation-item-name">
-              News analyzer
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="navigation-link" href="../Searchvideo/index.html">
-            <i class="fab fa-youtube"></i>
-            <span class="navigation-link__name js_navigation-item-name">
-              Video analyzer
-            </span>
-          </a>
-        </li>
-        <li>
-          <a class="navigation-link" href="../Searchaudio/index.html">
-            <i class="fa-regular fa-podcast"></i>
-            <span class="navigation-link__name js_navigation-item-name">
-              audio analyzer
+                    Prova il sistema come ospite
             </span>
           </a>
         </li>
       </ul>
     </nav>
 
-    <!-- LOGOUT -->
-
-    <a class="navigation-link logout" href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-power">
-        <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
-        <line x1="12" y1="2" x2="12" y2="12"></line>
-      </svg>
-      <span class="navigation-link__name js_navigation-item-name">
-        Logout
-      </span>
-    </a>
   </div>
 </div>
 

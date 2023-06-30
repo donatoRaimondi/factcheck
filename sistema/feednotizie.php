@@ -51,42 +51,42 @@ include '../config/authsession.php';
               </a>
             </li>
             <li>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="feednotizie.php">
                 <i class="fa-solid fa-chart-pie"></i>
                 <span class="navigation-link__name js_navigation-item-name">
-                  Analytics
+                  Notizie
                 </span>
               </a>
             </li>
             <li>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="image_anl.php">
                 <i class="fas fa-images"></i>
                 <span class="navigation-link__name js_navigation-item-name">
-                  Image analyzer
+                  Image Analyzer
                 </span>
               </a>
             </li>
             <li>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="ricerca.php">
                 <i class="fa-regular fa-newspaper"></i>
                 <span class="navigation-link__name js_navigation-item-name">
-                  News analyzer
+                  Ricerca
                 </span>
               </a>
             </li>
             <li>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="fonti.html">
                 <i class="fab fa-youtube"></i>
                 <span class="navigation-link__name js_navigation-item-name">
-                  Video analyzer
+                  Fonti
                 </span>
               </a>
             </li>
             <li>
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="analytics.html">
                 <i class="fa-regular fa-podcast"></i>
                 <span class="navigation-link__name js_navigation-item-name">
-                  audio analyzer
+                  Analytics
                 </span>
               </a>
             </li>
@@ -95,7 +95,7 @@ include '../config/authsession.php';
 
         <!-- LOGOUT -->
 
-        <a class="navigation-link logout" href="#">
+        <a class="navigation-link logout" href="logout.php">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-power">
             <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
             <line x1="12" y1="2" x2="12" y2="12"></line>
@@ -106,12 +106,22 @@ include '../config/authsession.php';
         </a>
       </div>
     </div>
+
     <div class="sear">
       <div class="sear-content">
       <!-- Contenuto del div -->
       <?php include 'feed.php'; ?>
     </div>
   </div>
+  <!-- effetto -->
+  </div>
+  <div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+  </div>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script><script  src="../script.js"></script>
+  <!-- /effetto -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js'></script><script  src="../Sidebar/script.js"></script>
   <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
 <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>

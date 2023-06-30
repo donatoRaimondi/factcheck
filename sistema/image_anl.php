@@ -16,7 +16,7 @@ include '../config/authsession.php';
 </head>
 <body>
 <!-- partial:index.partial.html -->
-  
+
 <main>
 <div class="upload">
 <form class="form" action="upload.php" method="POST" enctype="multipart/form-data">
@@ -29,30 +29,17 @@ include '../config/authsession.php';
           </div>
         </div>
     </div>
-  </div>
 </main>
 <div class="button-container1">
-<button id="mostraMediaButton" class="button"><span class="span-button">Mostra Media</span></button>
+<button onclick="window.location.href = 'get_media.php';"  id="mostraMediaButton" class="button"><span class="span-button">Mostra Media</span></button>
+</div>
+<div class="button-container1">
+<button onclick="window.location.href = 'home.php';"  id="mostraMediaButton" class="button"><span class="span-button">Torna alla Home</span></button>
 </div>
 <div id="mediaContainer"></div>
+
 <!-- partial -->
   <script src="../js/drop.js" charset="utf-8"></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="../js/dragdrop.js"></script>
-  <script>
-  $(document).ready(function() {
-    $('#mostraMediaButton').click(function() {
-      $.ajax({
-        url: 'get_media.php',
-        type: 'GET',
-        success: function(response) {
-          $('#mediaContainer').html(response);
-        },
-        error: function(xhr, status, error) {
-          console.log(error);
-        }
-      });
-    });
-  });
-  </script>
 </body>
 </html>

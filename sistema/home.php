@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <nav role="navigation">
       <ul>
         <li>
-          <a class="navigation-link" href="#">
+          <a class="navigation-link" href="home.php">
             <i class="fa-regular fa-house-chimney"></i>
             <span class="navigation-link__name js_navigation-item-name">
               Home
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <a class="navigation-link" href="image_anl.php">
             <i class="fas fa-images"></i>
             <span class="navigation-link__name js_navigation-item-name">
-              Image analyzer
+              Image Analyzer
             </span>
           </a>
         </li>
@@ -106,18 +106,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </a>
         </li>
         <li>
-          <a class="navigation-link" href="../Searchvideo/index.html">
+          <a class="navigation-link" href="fonti.html">
             <i class="fab fa-youtube"></i>
             <span class="navigation-link__name js_navigation-item-name">
-              Video analyzer
+              Fonti
             </span>
           </a>
         </li>
         <li>
-          <a class="navigation-link" href="../Searchaudio/index.html">
+          <a class="navigation-link" href="analytics.html">
             <i class="fa-regular fa-podcast"></i>
             <span class="navigation-link__name js_navigation-item-name">
-              audio analyzer
+              Analytics
             </span>
           </a>
         </li>
