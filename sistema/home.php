@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <nav role="navigation">
     <ul>
       <li>
-        <a class="navigation-link" href="home.php">
+        <a class="navigation-link" href="#">
           <i class="fa-regular fa-house-chimney"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Home
