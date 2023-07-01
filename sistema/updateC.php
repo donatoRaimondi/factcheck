@@ -1,6 +1,7 @@
 <?php
 require '../config/config.php';
 
+
 if (isset($_POST['update'])) {
     $idNotizia = $_POST['id'];
     $commento = $_POST['commento'];

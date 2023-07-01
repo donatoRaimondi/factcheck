@@ -1,5 +1,6 @@
 <?php
 require '../config/config.php';
+include '../config/checksession.php';
 $username= 'GUEST';
 $result = mysqli_query($conn, "SELECT * FROM utente WHERE username ='$username' ");
 $row = mysqli_fetch_assoc($result);

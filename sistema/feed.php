@@ -1,5 +1,6 @@
 <?php
 require '../config/config.php';
+include '../config/authsession.php';
 require '../config/simple_html_dom.php';
 
 // Funzione per ottenere le informazioni delle meta tag Open Graph da un URL
@@ -66,7 +67,7 @@ if ($result->num_rows > 0) {
                 // Ottenere il nome del dominio dalla URL
                 $urlComponents = parse_url($content);
                 $source = $urlComponents['host'];
-                
+
                 // Aggiungi la notizia alla sezione delle notizie
                 echo '<div class="news">';
                 echo '<h2> Utente che ha richiesto il check: <strong style="font-weight: bold;">' . $username . ' </strong></h2>';

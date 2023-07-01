@@ -1,6 +1,7 @@
 <?php
 require '../config/config.php';
 
+
 if (isset($_POST['update'])) {
     $idMultimedia = $_POST['id'];
     $esito = $_POST['esito'];

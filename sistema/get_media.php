@@ -1,5 +1,6 @@
 <?php
 require '../config/config.php';
+include '../config/authsession.php';
 ?>
 
 <!DOCTYPE html>
@@ -42,60 +43,68 @@ require '../config/config.php';
       </div>-->
 
       <!-- NAVIGATION -->
-      <nav role="navigation">
-        <ul>
-          <li>
-            <a class="navigation-link" href="home.php">
-              <i class="fa-regular fa-house-chimney"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Home
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navigation-link" href="feednotizie.php">
-              <i class="fa-solid fa-chart-pie"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Notizie
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navigation-link" href="image_anl.php">
-              <i class="fas fa-images"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Image Analyzer
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navigation-link" href="ricerca.php">
-              <i class="fa-regular fa-newspaper"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Ricerca
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navigation-link" href="fonti.html">
-              <i class="fab fa-youtube"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Fonti
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="navigation-link" href="analytics.html">
-              <i class="fa-regular fa-podcast"></i>
-              <span class="navigation-link__name js_navigation-item-name">
-                Analytics
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <nav role="navigation">
+    <ul>
+      <li>
+        <a class="navigation-link" href="home.php">
+          <i class="fa-regular fa-house-chimney"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Home
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="feednotizie.php">
+          <i class="fa-regular fa-newspaper"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Notizie
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="image_anl.php">
+          <i class="fas fa-images"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Image Analyzer
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="get_media.php">
+          <i class="fas fa-images"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Media
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="ricerca.php">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Ricerca
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="fonti.php">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Fonti
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="navigation-link" href="analytics.php">
+          <i class="fa-solid fa-chart-pie"></i>
+          <span class="navigation-link__name js_navigation-item-name">
+            Analytics
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-      <!-- LOGOUT -->
+  <!-- LOGOUT -->
 
       <a class="navigation-link logout" href="logout.php">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="navigation-link__icon feather feather-power">
