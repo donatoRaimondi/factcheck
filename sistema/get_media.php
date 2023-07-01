@@ -137,10 +137,12 @@ include '../config/authsession.php';
               $extension = strtolower(pathinfo($path, PATHINFO_EXTENSION));
               $commento = $row['commento'];
               $esito = $row['esito'];
+              $categoria = $row['categoria'];
               echo '<p>Utente che ha richiesto il check: <strong style="font-weight: bold;">' . $username . '</strong></p>';
-                echo '<p>Date: <strong style="font-weight: bold;">' . $data . '</strong></p>';
+              echo '<p>Date: <strong style="font-weight: bold;">' . $data . '</strong></p>';
               echo '<p>Esito: <strong style="font-weight: bold;">' . ($esito !== null ? $esito : 'non ancora confermato') . '</strong></p>';
-                echo '<p>Commento: <strong style="font-weight: bold;">' . ($commento !== null ? $commento : 'non ancora confermato') . '</strong></p>';
+              echo '<p>Commento: <strong style="font-weight: bold;">' . ($commento !== null ? $commento : 'non ancora confermato') . '</strong></p>';
+              echo '<p>Categoria: <strong style="font-weight: bold;">' . ($categoria !== null ? $categoria : 'non ancora confermata') . '</strong></p>';
               // Verifica l'estensione del file per determinare come visualizzarlo
               if (in_array($extension, ['jpg', 'jpeg', 'png'])) {
                 // Immagine

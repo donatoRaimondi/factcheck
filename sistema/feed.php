@@ -51,6 +51,7 @@ if ($result->num_rows > 0) {
         $esito = $row['esito'];
         $date = $row['data_pubblicazione'];
         $commento =  $row['commento'];
+        $categoria = $row['categoria'];
 
         // Verifica se l'URL è già stato visitato
         if (!in_array($content, $visitedURLs)) {
@@ -74,6 +75,7 @@ if ($result->num_rows > 0) {
                 echo '<p>Date: <strong style="font-weight: bold;">' . $date . '</strong></p>';
                 echo '<p>Esito: <strong style="font-weight: bold;"> ' . ($esito !== null ? $esito : 'non ancora confermato') . '</strong></p>';
                 echo '<p>Commento amministratore: <strong style="font-weight: bold;"> ' . ($commento !== null ? $commento : 'non ancora confermato') . '</strong></p>';
+                echo '<p>Categoria: <strong style="font-weight: bold;"> ' . ($categoria !== null ? $categoria : 'non ancora confermata') . '</strong></p>';
                 echo '<p>Fonte: <strong style="font-weight: bold;"> ' . $source . '</strong></p>';
                 echo '<div class="post">';
                 echo '<div class="post-image">';

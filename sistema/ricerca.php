@@ -144,22 +144,17 @@ require '../config/simple_html_dom.php';
         $sql = "SELECT n.*, u.username
         FROM notizia n
         JOIN utente u ON n.id_utente = u.id
-        WHERE n.contenuto LIKE '%$searchTerm%'
-        AND n.esito IS NOT NULL
+        WHERE (n.contenuto LIKE '%$searchTerm%' OR n.categoria LIKE '%$searchTerm%')
+            AND (
+                (n.esito IS NOT NULL)
+                OR
+                (n.esito IS NULL AND NOT EXISTS (
+                    SELECT *
+                    FROM notizia
+                    WHERE contenuto = n.contenuto AND esito IS NOT NULL
+                ))
+            );";
 
-        UNION
-
-        SELECT n.*, u.username
-        FROM notizia n
-        JOIN utente u ON n.id_utente = u.id
-        WHERE n.contenuto LIKE '%$searchTerm%'
-        AND n.esito IS NULL
-        AND NOT EXISTS (
-          SELECT *
-          FROM notizia
-          WHERE contenuto = n.contenuto
-          AND esito IS NOT NULL
-        );";
         $result = $conn->query($sql);
 
         // Verifica se ci sono risultati dalla query
@@ -171,8 +166,10 @@ require '../config/simple_html_dom.php';
                 $esito = $row['esito'];
                 $date = $row['data_pubblicazione'];
                 $commento =  $row['commento'];
+                $categoria = $row['categoria'];
                 $urlComponents = parse_url($url);
                 $source = $urlComponents['host'];
+
                 // Verifica se l'URL è valido
                 if (filter_var($url, FILTER_VALIDATE_URL)) {
                     // Carica il contenuto della pagina web utilizzando file_get_contents
@@ -199,6 +196,7 @@ require '../config/simple_html_dom.php';
                     echo '<p>Esito: <strong style="font-weight: bold;"> ' . ($esito !== null ? $esito : 'non ancora confermato') . '</strong></p>';
                     echo '<p>Commento amministratore: <strong style="font-weight: bold;"> ' . ($commento !== null ? $commento : 'non ancora confermato') . '</strong></p>';
                     echo '<p>Fonte: <strong style="font-weight: bold;"> ' . $source . '</strong></p>';
+                    echo '<p>Categoria: ' . $categoria . '</p>';
                     echo '<div class="post">';
                     echo '<div class="post-image">';
                     echo '<img src="' . $image . '" alt="Preview Image">';
@@ -210,16 +208,6 @@ require '../config/simple_html_dom.php';
                     echo '</div>';
                     echo '</div>';
                     echo '<hr class="divider"></hr>';
-                    /*echo '<div class="post">';
-                    echo '<div class="post-image">';
-                    echo '<p>Fonte: <strong style="font-weight: bold;"> ' . $source . '</strong></p>';
-                    echo '<img src="' . $image . '" alt="Preview Image">';
-                    echo '</div>';
-                    echo '<div class="post-content">';
-                    echo '<h3 class="post-title">' . $title . '</h3>';
-                    echo '<p class="post-description">' . $description . '</p>';
-                    echo '</div>';
-                    echo '</div>';*/
 
                     // Libera la memoria dopo l'uso di SimpleHTMLDom
                     $dom->clear();

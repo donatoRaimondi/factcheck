@@ -48,6 +48,7 @@ $sql = "CREATE TABLE IF NOT EXISTS notizia (
     data_pubblicazione DATETIME,
     esito TEXT,
     commento TEXT,
+    categoria TEXT,
     FOREIGN KEY (id_utente) REFERENCES utente(id)
 )";
 if ($conn->query($sql) === TRUE) {
@@ -66,6 +67,7 @@ $sql = "CREATE TABLE IF NOT EXISTS multimedia (
     data_pubblicazione DATETIME,
     esito TEXT,
     commento TEXT,
+    categoria TEXT,
     FOREIGN KEY (id_utente) REFERENCES utente(id)
 )";
 if ($conn->query($sql) === TRUE) {
