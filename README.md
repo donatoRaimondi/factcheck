@@ -1,7 +1,7 @@
 # Fact Check Engine
----
 ## Un portale che da la possibilità agli utenti di poter verificare una notizia
-### *CdL: ICDL Progetto universitario di Ingegneria del Software*
+### *CdL: ICD*
+### *Progetto universitario di Ingegneria del Software*
 ### *UniBA* | *Docenti: Antonio Piccinno, Vita Santa Bartella, Mirko De Vincentiis*
 ---
 ### Requisiti
