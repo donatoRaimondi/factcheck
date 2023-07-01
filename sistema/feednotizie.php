@@ -51,7 +51,7 @@ include '../config/authsession.php';
           </a>
         </li>
         <li>
-          <a class="navigation-link" href="feednotizie.php">
+          <a class="navigation-link" href="#">
             <i class="fa-regular fa-newspaper"></i>
             <span class="navigation-link__name js_navigation-item-name">
               Notizie
