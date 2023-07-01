@@ -80,7 +80,7 @@ include '../config/authsession.php';
         </a>
       </li>
       <li>
-        <a class="navigation-link" href="fonti.php">
+        <a class="navigation-link" href="#">
           <i class="fa-solid fa-earth-americas"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Fonti
