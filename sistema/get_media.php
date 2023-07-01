@@ -70,7 +70,7 @@ include '../config/authsession.php';
         </a>
       </li>
       <li>
-        <a class="navigation-link" href="get_media.php">
+        <a class="navigation-link" href="#">
           <i class="fas fa-images"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Media
