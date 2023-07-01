@@ -52,7 +52,7 @@ include '../config/authsession.php';
         </li>
         <li>
           <a class="navigation-link" href="#">
-            <i class="fa-regular fa-newspaper"></i>
+            <i class="fas fa-images"></i>
             <span class="navigation-link__name js_navigation-item-name">
               Notizie
             </span>
@@ -60,7 +60,7 @@ include '../config/authsession.php';
         </li>
         <li>
           <a class="navigation-link" href="image_anl.php">
-            <i class="fas fa-images"></i>
+            <i class="fa-regular fa-newspaper"></i>
             <span class="navigation-link__name js_navigation-item-name">
               Image Analyzer
             </span>
