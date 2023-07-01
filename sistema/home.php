@@ -91,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </li>
       <li>
         <a class="navigation-link" href="image_anl.php">
-          <i class="fas fa-images"></i>
+        <i class="fa-solid fa-barcode"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Image Analyzer
           </span>
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </li>
       <li>
         <a class="navigation-link" href="get_media.php">
-          <i class="fas fa-images"></i>
+          <i class="fas fa-images"></i> 
           <span class="navigation-link__name js_navigation-item-name">
             Media
           </span>

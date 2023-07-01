@@ -63,7 +63,7 @@ include '../config/authsession.php';
       </li>
       <li>
         <a class="navigation-link" href="image_anl.php">
-          <i class="fas fa-images"></i>
+        <i class="fa-solid fa-barcode"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Image Analyzer
           </span>
