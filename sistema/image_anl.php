@@ -9,6 +9,7 @@ include '../config/authsession.php';
 <head>
   <meta charset="UTF-8">
   <title>Image analyzer</title>
+  <link rel="shortcut icon" href="../Logo/Fact_check_favicon.png">
   <title> Upload field </title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
 <link rel='stylesheet' href='https://raw.github.com/daneden/animate.css/master/animate.css'><link rel="stylesheet" href="../style/anl.css">

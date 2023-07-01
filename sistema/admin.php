@@ -11,6 +11,7 @@ $resultMedia = $conn->query($sqlMedia);
 
 <html>
 <head>
+<link rel="shortcut icon" href="../Logo/Fact_check_favicon.png">
 </head>
 <body>
     <h2>Notizie</h2>

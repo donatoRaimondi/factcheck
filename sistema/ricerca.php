@@ -8,6 +8,7 @@ require '../config/simple_html_dom.php';
 <head>
     <meta charset="UTF-8">
     <title>Ricerca Notizie</title>
+    <link rel="shortcut icon" href="../Logo/Fact_check_favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css'>
     <link rel="stylesheet" href="../Sidebar/style.css">
     <link rel="stylesheet" href="../style/ricerca.css">

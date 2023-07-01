@@ -34,6 +34,7 @@ if (isset($_POST["submit"])) {
 <head>
   <meta charset="UTF-8">
   <title>Registrati</title>
+  <link rel="shortcut icon" href="../Logo/Fact_check_favicon.png">
   <link rel="icon" href="../Logo/Fact_check_favicon.png"/>
   <link rel="stylesheet" href="../style/registration.css">
   <link rel="stylesheet" href="../style/buttonLR.css">
