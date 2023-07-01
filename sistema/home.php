@@ -151,7 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="container_read">
 <!--    search  -->
       <form id="newsForm" method="POST" enctype="multipart/form-data" class='search-form_read'>
-        <input type="text" name="url" id="textInput" class="search-bar_read" placeholder="url" pattern="https?://.+" required/>
+        <input type="text" name="url" id="textInput" class="search-bar_read" placeholder="Inserire url della notizia da caricare sul sistema" pattern="https?://.+" required/>
         <div class='search-btn_read'>
           <button type='submit'>
             <i class="fa fa-search search_read"></i>
