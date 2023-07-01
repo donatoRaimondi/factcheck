@@ -74,7 +74,7 @@ require '../config/simple_html_dom.php';
         </a>
       </li>
       <li>
-        <a class="navigation-link" href="ricerca.php">
+        <a class="navigation-link" href="#">
           <i class="fa-solid fa-magnifying-glass"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Ricerca
