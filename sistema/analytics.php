@@ -84,7 +84,7 @@ include '../config/authsession.php';
         </a>
       </li>
       <li>
-        <a class="navigation-link" href="analytics.php">
+        <a class="navigation-link" href="#">
           <i class="fa-solid fa-chart-pie"></i>
           <span class="navigation-link__name js_navigation-item-name">
             Analytics
